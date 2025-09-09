@@ -108,7 +108,7 @@ def build_session(timeout, keepalive=True, verify_tls=True):
     s.mount("http://", adapter)
     s.mount("https://", adapter)
     s.headers.update({
-        "User-Agent": "NAI-LoadTester/1.0",
+        "User-Agent": "BA313L7-LoadTester/1.0",
         "Connection": "keep-alive" if keepalive else "close"
     })
     s.verify = verify_tls
@@ -206,7 +206,7 @@ def print_report(args, metrics: Metrics, start_ts, end_ts):
 
     print("\n")
     print(Fore.CYAN + Style.BRIGHT + "─" * 64)
-    print(Fore.CYAN + Style.BRIGHT + " NAI DDoS Report")
+    print(Fore.CYAN + Style.BRIGHT + " BA313L7 DDoS Report")
     print(Fore.CYAN + Style.BRIGHT + "─" * 64)
     print(f"{Fore.MAGENTA}Target    : {args.url}")
     print(f"{Fore.MAGENTA}Method    : {args.method} | Threads: {args.threads} | RPS/thread: {args.rps or 'unlimited'}")

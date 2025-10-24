@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+#! /usr/bin/python3.11
+
 import argparse
 import threading
 import time
